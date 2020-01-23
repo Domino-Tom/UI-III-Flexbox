@@ -65,34 +65,48 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+.flex {
+	display: flex;
+}
+
 .container {
-	width: 875px;
+	width: 46%;
+	min-width: 700px;
 	margin: 0 auto;
 }
 
+.nav-bar {
+	justify-content: space-between;
+}
 
 
 .nav-bar nav {
-	display: inline-block;
-	width: 76%;
+	width: 68.25%;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.nav-bar nav ul {
-	position: relative;
-	top: -12px;
-}
-
-.nav-bar li {
+.nav-bar nav li {
 	display: inline-block;
 	font-size: .9rem;
-	padding-top: 40px;
-	padding-right: 62px;
+	padding-top: 25px;
 	color: #999999;
+	transition: .3s;
+}
+
+.nav-bar nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav-bar nav li:hover {
+	transform: scale(1.2);
+	color: black;
 }
 
 .logo-div {
 	display: inline-block;
-	width: auto;
+	width: 23.5%;
 }
 
 .logo-div img {
