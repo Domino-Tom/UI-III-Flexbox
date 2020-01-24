@@ -65,18 +65,23 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+/* Container and Universals */
+
 .flex {
 	display: flex;
 }
 
 .container {
 	width: 46%;
-	min-width: 700px;
+	min-width: 600px;
 	margin: 0 auto;
 }
 
+/* Navigation */
+
 .nav-bar {
 	justify-content: space-between;
+	margin-bottom: 8%;
 }
 
 
@@ -116,87 +121,79 @@ h1, h2, h3, h4, h5 {
 	padding-left: 23px;
 }
 
+/* Header */
+
 .call-to-action {
 	border-bottom: 1px solid black;
-	padding-bottom: 70px;
-	margin-top: 67px;
-	margin-bottom: 35px;
+	padding-bottom: 8%;
+	margin-bottom: 5%;
 }
 
 .cta-main {
-	display: inline-block;
-	height: auto;
-	width: 56%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
 }
 
 .cta-main h1 {
 	font-size: 80px;
 	text-align: center;
-	width: 50%;
-	margin: 0 auto;
-	position: relative;
-	top: -75px;
-	left: -50px;
+	width: 300px;
 }
 
 .cta-main a {
-	display: block;
-	width: 175px;
 	text-decoration: none;
 	color: black;
-	font-size: 18px;
-	text-align: center;
-	padding: 5px 0;
+	font-size: 16px;
 	border: 1px solid black;
-	margin: 0 auto;
-	position: relative;
-	top: -60px;
-	left: -50px;
+	padding: 5px 50px;
 }
 
 .cta-img {
-	display: inline-block;
-	width: 43.4%;
-	position: relative;
-	left: 2px;
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
 }
 
-.cta-img img {
+/* Content */
+
+.info {
+	flex-direction: column;
+	border-bottom: 1px solid black;
+	margin-bottom: 5%;
+	font-size: 17px;
+}
+
+.info-top, .info-middle, .info-bottom {
+	margin-bottom: 5%;
+}
+
+.info-top section {
+	width: 50%;
+}
+
+.features {
+	margin-right: 8%;
+}
+
+.middle-img {
 	width: 100%;
 	height: auto;
 }
 
-.info {
-	border-bottom: 1px solid black;
-	margin-bottom: 45px;
-}
-
-.info-top, .info-middle, .info-bottom {
-	margin-bottom: 45px;
-}
-
-.info-top section {
-	display: inline-block;
-	font-size: 17px;
-	width: 47%;
-}
-
-.features {
-	margin-right: 40px;
-}
-
 .info-bottom section {
-	display: inline-block;
 	font-size: 17px;
 	width: 30%;
 }
 
 .services, .products {
-	margin-right: 40px;
+	margin-right: 8%;
 }
 
 .contact {
-	margin-bottom: 45px;
+	margin-bottom: 8%;
 }
 
 .contact li {
